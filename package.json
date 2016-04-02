@@ -1,7 +1,7 @@
 {
   "name": "curl-to-node",
   "description": "Transform curl CLI commands to js options for http requests libraries",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "dependencies": {
     "minimist": "^1.2.0",
