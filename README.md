@@ -13,7 +13,7 @@ $ npm install curl-to-node --save
 ## Usage
 
 ```js
-import curlToNode from '../src/index';
+import curlToNode from 'curl-to-node';
 import got from 'got';
 
 const str = `curl https://api.github.com/users/ewnd9 \
@@ -33,10 +33,10 @@ got.apply(got, curlToNode('got', str))
 
 - [`got`](https://github.com/sindresorhus/got)
   - [x] `-X <method>`
-  - [x] `-H <header`
+  - [x] `-H <header>`
   - [ ] `--compressed`
 - [`superagent`](https://github.com/visionmedia/superagent)
-  - nothing is done yet
+  - nothing has been done yet
 
 ## License
 

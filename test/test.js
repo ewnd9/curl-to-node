@@ -20,10 +20,12 @@ test('get with headers', async t => {
   t.ok(headersKeys[0] === 'User-Agent');
   t.ok(headersKeys[1] === 'Accept');
 
-  const response = await got.apply(got, args);
-  const body = JSON.parse(response.body);
+  if (!process.env.TRAVIS) { // blocked on github
+    const response = await got.apply(got, args);
+    const body = JSON.parse(response.body);
 
-  t.ok(body.login === 'ewnd9')
+    t.ok(body.login === 'ewnd9');
+  }
 });
 
 test('post', async t => {
